@@ -30,7 +30,7 @@ public class RoomController {
 	@Autowired
 	private RoomRepository roomRepository;
 
-	@GetMapping("/")
+	@GetMapping("/rooms")
 	public List<Room> getAllRooms() {
 		return roomRepository.findAll();
 
